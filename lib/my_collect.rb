@@ -4,11 +4,17 @@ def my_collect(collection)
   new_collection = []
     while i < collection.length
       new_collection << yield(collection[i])
-      i+=1
+        i+=1
     end
   new_collection
 end
 
+
+#array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
+#
+#my_collect(array) do |name|
+#  name.split(" ").first
+#  end
 
 
 #collection = ['ruby', 'javascript', 'python', 'objective-c']
@@ -17,10 +23,3 @@ end
 #  lang.uppercase
 #end
 #
-
-
-#array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-#
-#my_collect(array) do |name|
-#  name.split(" ").first
-#  end
